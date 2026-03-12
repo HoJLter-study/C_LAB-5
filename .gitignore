@@ -1,0 +1,58 @@
+# Visual Studio cache/options
+.vs/
+
+# Build folders
+Debug/
+Release/
+x64/
+x86/
+build/
+out/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# Visual Studio project build artifacts
+*.obj
+*.o
+*.pch
+*.pdb
+*.ilk
+*.idb
+*.tlog
+*.log
+*.vcxproj
+*.vcxproj.filters
+*.filters
+# Executables and libraries
+*.exe
+*.dll
+*.lib
+*.exp
+
+# Temporary files
+*.tmp
+*.temp
+
+# Visual Studio user files
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+
+# IntelliSense
+ipch/
+
+# CTest
+Testing/
+
+# Ninja
+.ninja_deps
+.ninja_log
+
+# Windows
+Thumbs.db
+Desktop.ini
