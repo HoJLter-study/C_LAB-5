@@ -33,6 +33,6 @@ public:
 uint8_t daysInMonth(uint8_t, uint16_t);
 
 
-std::ostream& operator<< (std::ostream&, Date);
+std::ostream& operator<< (std::ostream&, Date&);
 std::istream& operator>> (std::istream&, Date&);
 
