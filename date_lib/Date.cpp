@@ -126,7 +126,14 @@ std::istream& operator>> (std::istream& input, Date& arg) {
     Date temp;
 
     int day, month, year;
-    input >> day >> month >> year;
+    char sep;
+    input >> day;
+    if (input.peek() == '.') {
+        input >> sep >> month >> sep >> year;
+    }
+    else {
+        input >> month >> year;
+    }
     temp.setDay(day);
     temp.setMonth(month);
     temp.setYear(year);

@@ -5,6 +5,8 @@
 int main() {
     try {
         Date obj1;
+        std::cout << "Enter some date: ";
+        std::cin >> obj1;
         std::cout << obj1;
     }
     catch (std::invalid_argument& e) {
