@@ -13,7 +13,7 @@ namespace tests
 		TEST_METHOD(ConstructorTest1)
 		{
 			Date obj;
-			Assert::IsTrue(obj.getDay() == 1 && obj.getMonth() == 1 && obj.getYear() == 1);
+			Assert::IsTrue(obj.getDay() == 1 && obj.getMonth() == 1 && obj.getYear() == 1970);
 		}
 
 		TEST_METHOD(ConstructorTest2)
