@@ -24,8 +24,6 @@ compile_commands.json
 *.idb
 *.tlog
 *.log
-*.vcxproj
-*.vcxproj.filters
 *.filters
 # Executables and libraries
 *.exe
