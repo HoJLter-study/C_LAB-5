@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "CppUnitTest.h"
 #include "Date.h"
+#include <sstream>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -74,6 +75,22 @@ namespace tests
 			Date obj1(1, 1, 1984);
 			Date obj2(1, 5, 1924);
 			Assert::IsTrue(obj2 != obj1);
+		}
+
+		TEST_METHOD(OperatorTest7)
+		{
+			Date obj1(1, 1, 2005);
+			std::stringstream ss("19.01.1984");
+			ss >> obj1;
+			Assert::IsTrue(obj1.getDay() == 19 && obj1.getMonth() == 1 && obj1.getYear() == 1984);
+		}
+
+		TEST_METHOD(OperatorTest8)
+		{
+			Date obj1;
+			std::stringstream ss;
+			ss << obj1;
+			Assert::IsTrue(ss.str() == "01.01.1970");
 		}
 
 	};
